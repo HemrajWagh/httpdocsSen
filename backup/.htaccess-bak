@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.megapolisserenity.com [NC]
+RewriteRule ^(.*)$ http://www.megapolisserenity.com/$1 [L,R=301]
+

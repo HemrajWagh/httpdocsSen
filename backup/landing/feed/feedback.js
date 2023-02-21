@@ -1,0 +1,1 @@
+$(function(){$("#feedback-tab").click(function(){$("#feedback-form").toggle("slide")}),$("#feedback-form form").on("submit1",function(e){var t=$(this);$.ajax({type:t.attr("method"),url:t.attr("action"),data:t.serialize(),success:function(){$("#feedback-form").toggle("slide").find("textarea").val("")}}),e.preventDefault()})});
